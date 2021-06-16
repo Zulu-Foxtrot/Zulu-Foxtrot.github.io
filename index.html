@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>HTML, CSS Ansiklopedisi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>HTML & CSS Ansiklopedisi</h1>
+    <nav>
+        <h2><a href="#tables">Tablolar</a></h2>
+    </nav>
+    <br>
+    <h3 id="tables">Tablo Etiketleri</h3>
+    <table>
+        <thead>
+            <tr>
+                <th><h4>Etiket</h4></th>
+                <th><h4>İsim</h4></th>
+                <th><h4>Açıklama</h4></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;table&gt;</code></td>
+                <td>Tablo</td>
+                <td>Tüm HTML tabloları için sarmalayıcı öğe.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;thead&gt;</code></td>
+                <td>Tablo Başlığı</td>
+                <td>Bir tablodaki sütun başlıklarını tanımlayan satır kümesi.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;tbody&gt;</code></td>
+                <td>Tablo İçeriği</td>
+                <td>Gerçek tablo verilerini içeren satır kümesi.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;tr&gt;</code></td>
+                <td>Tablo Satırı</td>
+                <td>Tablo satırı kapsayıcısı.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;td&gt;</code></td>
+                <td>Tablo Verisi</td>
+                <td>Tablo satırı kapsayıcısı. <code>&lt;p&gt;</code> gibi...</td>
+            </tr>
+            <tr>
+                <td><code>&lt;tfoot&gt;</code></td>
+                <td>Tablo Alt Başlığı</td>
+                <td>Bir tablodaki alt bilgiyi tanımlayan satır kümesi.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Tablo Öznitelikleri</h3>
+    <table>
+        <thead>
+            <tr>
+                <th><h4>Nitelik</h4></th>
+                <th><h4>İsim</h4></th>
+                <th><h4>Açıklama</h4></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;colspan&gt;</code></td>
+                <td>Sütun Açıklığı</td>
+                <td>Bir td öğesinin kaç sütuna yayılması gerektiğini tanımlar.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;rowspan&gt;</code></td>
+                <td>Row Span</td>
+                <td>Bir td öğesinin kaç satıra yayılacağını tanımlar.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Tablolarda Kullanılan Bazı CSS Nitelikleri</h3>
+    <table>
+        <thead>
+            <tr>
+                <th><h4>Nitelik</h4></th>
+                <th><h4>Değer</h4></th>
+                <th><h4>Açıklama</h4></th>
+            </tr>
+        </thead>
+        <tbody>
+            <div class="samerow">
+                <tr>
+                    <td rowspan="3"><code>border:</code></td>
+                    <td><code>line-width;</code></td>
+                    <td>Kenarlığın kalınlığını ayarlar. Varsa, <code>medium</code> varsayılandır. bkz. <code>border-width</code></td>
+                </tr>
+                <tr>
+                    <td><code>line-style;</code></td>
+                    <td>Kenarlığın stilini ayarlar. Yok ise varsayılan olarak <code>none</code>. bkz. <code>border-style</code></td>
+                </tr>
+                <tr>
+                    <td><code>color;</code></td>
+                    <td>Kenarlığın rengini ayarlar. Varsa, <code>currentcolor</code> varsayılandır. bkz. <code>border-color</code></td>
+                </tr>
+            </div>
+            <tr>
+                <td rowspan="2"><code>border-collapse:</code></td>
+                <td><code>collapse;</code></td>
+                <td>Bitişik hücrelerin ortak sınırları vardır (daraltılmış kenarlıklı tablo oluşturma modeli).</td>
+            </tr>
+            <tr>
+                <td><code>separate;</code></td>
+                <td>Bitişik hücrelerin farklı sınırları vardır (ayrılmış kenarlıklı tablo oluşturma modeli).</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><code>padding:</code></td>
+                <td><code>length;</code></td>
+                <td>Sabit bir değer olarak dolgunun boyutu.</td>
+            </tr>
+            <tr>
+                <td><code>percentage;</code></td>
+                <td>İçerdiği bloğun genişliğine göre yüzde olarak dolgunun boyutu.</td>
+            </tr>
+            <tr>
+                <td rowspan="4"><code>text-align:</code></td>
+                <td><code>left;</code></td>
+                <td>Satır içi içerik, satır kutusunun sol kenarına hizalanır.</td>
+            </tr>
+            <tr>
+                <td><code>right;</code></td>
+                <td>Satır içi içerik, satır kutusunun sağ kenarına hizalanır.</td>
+            </tr>
+            <tr>
+                <td><code>center;</code></td>
+                <td>Satır içi içerikler satır kutusu içinde ortalanır.</td>
+            </tr>
+            <tr>
+                <td><code>justify;</code></td>
+                <td>Satır içi içerikler haklı. Metin, son satır hariç, sol ve sağ kenarlarını satır kutusunun sol ve 
+                    sağ kenarlarına hizalayacak şekilde boşluk bırakılmalıdır.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

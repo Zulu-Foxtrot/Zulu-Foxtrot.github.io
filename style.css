@@ -1,21 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Baloo Tammudu 2";
     text-align: center;
     background-color: ghostwhite;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    position: static;
+}
+
+header {
+    background-color: rgb(253, 236, 214);
+    box-shadow: 0 2px 15px rgb(161, 161, 161);
+    margin: 0 auto;
+    width: 100%;
+    height: 18%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    z-index: 1;
+}
+
+div.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+div.container h1 {
+    height: 80px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    font-size: 35px;
+}
+
+div.container h1 a {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    height: 75px;
+}
+
+div.container .navigation {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    top: 100px;
+    height: 40px;
+    display: flex;
+}
+
+.navigation ul {
+    text-align: center;
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin: 0 auto;
+    height: 42px;
+    width: 150px;
+    border-radius: 60px;
+    position: relative;
+}
+
+.navigation ul li h2 {
+    text-align: center;
+    height: 40px;
+    position: relative;
+}
+
+.navigation ul li a {
+    text-align: center;
+}
+
+.navigation li:hover {
+    background-color: ghostwhite;
+    transition: 1s;
+}
+
+section.content {
+    margin: 0 auto 50px;
+    margin-top: 200px;
+    padding: 0 100px 50px;
+}
+
+#headings {
+
 }
 
 code {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Ubuntu Mono", monospace;
     background-color: lemonchiffon;
 }
 
 table, th, td {
     border: 1px solid lightgrey;
-    margin: auto;
+    margin: 0 auto;
     text-align: left;
     border-collapse: collapse;
+    position: relative;
 }
 
 th {
@@ -34,7 +139,8 @@ tr:hover {
 
 table {
     table-layout: fixed;
-    width: 75%;
+    width: 100%;
+    height: 100%;
 }
 
 h4 {
